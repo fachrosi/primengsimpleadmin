@@ -1,0 +1,54 @@
+<h1>Dashboard</h1>
+
+<div class="card-container flex flex-wrap">
+    <div class="card-dashboard-std" style="width: 30%;">
+        <p-card [style]="{'background-color':'#F44336', 'color':'#FFFFFF'}">
+            <i class="pi pi-shopping-cart"></i>
+            <div class="info">87 %</div>
+            <div class="title">Sale</div>
+        </p-card>
+    </div>    
+
+    <div class="flex-grow-1"></div>
+
+    <div class="card-dashboard-std" style="width: 30%;">
+        <p-card [style]="{'background-color':'#FFEB3B', 'color':'#000000'}">
+            <i class="pi pi-box"></i>
+            <div class="info">1.987 Unit</div>
+            <div class="title">Product</div>
+        </p-card>
+    </div>
+
+    <div class="flex-grow-1"></div>
+
+    <div class="card-dashboard-std" style="width: 30%;">
+        <p-card [style]="{'background-color':'#2196F3', 'color':'#FFFFFF'}">
+            <i class="pi pi-money-bill"></i>
+            <div class="info">IDR 1.234 K</div>
+            <div class="title">Profit</div>
+        </p-card>
+    </div>   
+    
+</div>
+
+<div class="flex flex-wrap" style="margin: 30px 0px;">
+
+    <div style="width: 61%;">
+        <p-card header="Combo Chart">
+            <img src="/assets/imgs/chart-combo.png" width="100%" height="auto">
+        </p-card>
+    </div>   
+
+    <div class="flex-grow-1"></div>
+
+    <div style="width: 34%;">
+        <p-card header="Pie Chart">
+            <img src="/assets/imgs/chart-pie.png" width="100%" height="auto">
+        </p-card>
+    </div>
+   
+</div>
+
+<p-card header="Bar Chart">
+    <img src="/assets/imgs/chart-bar.png" width="100%" height="auto">
+</p-card>

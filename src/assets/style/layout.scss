@@ -1,0 +1,114 @@
+@import "variables";
+@import "sidemenu.scss";
+
+body {
+    margin: 0px;
+}
+
+.header {
+    border-bottom: 1px solid #EEEEEE;
+    height: 50px;
+    padding: 6px 10px;
+    vertical-align: middle;
+    background-color: $header-background;
+    color: $header-color;
+
+    button {
+        color: $header-color!important;
+    }
+
+    button:hover {
+        background-color: $header-hover-background!important;
+        color: $header-hover-color!important;
+    }
+
+    button:focus-within {
+        border: none;
+        box-shadow: none;
+    }
+
+    img {
+        height: 30px;
+        width: auto;
+        margin: 4px 10px 4px 10px;
+    }
+    
+    .title-text {
+        font-weight: bold;
+        margin-top: auto;
+        margin-bottom: auto;
+        font-family: Verdana;
+        white-space: nowrap;
+
+        @media screen and (max-width: 420px) {
+            visibility:hidden;
+            width: 0px;
+        }
+    }
+    
+    .user {
+        margin-top: auto;
+        margin-bottom: auto;
+        font-family: Verdana;
+        margin-right: 5px;
+        font-size: 90%;
+        white-space: nowrap;
+    }
+}
+
+.sidemenu {
+    border-right: solid 1px #EEEEEE;
+    background-color: $sidemenu-background;
+    float: left;
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.sidemenu-open {
+    width: $sidemenu-width-open;
+    transition: width 0.5s;
+}
+
+.sidemenu-minimize {
+    width: 50px;
+    transition: width 0.5s;
+}
+
+.sidemenu-close {
+    width: 0px;
+    transition: 0.5s ease;   
+    position: absolute; 
+    overflow: hidden;
+}
+
+.sidemenu-overlay {
+    width: $sidemenu-width-open;
+    transition: width 0.5s;
+    position: absolute;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 10;
+}
+
+.content {
+    background-color: $content-background;
+    font-family: $font;
+    float: left;
+    height: calc(100vh - 50px);
+    padding: 10px;
+    overflow: auto;
+}
+
+.content-normal {
+    width: calc(100% - $sidemenu-width-open);
+    transition: width 0.5s;
+}
+
+.content-wide {
+    width: calc(100% - 50px);
+    transition: width 0.5s;
+}
+
+.content-full {
+    width: 100%;
+}

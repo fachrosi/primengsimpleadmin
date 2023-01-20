@@ -1,0 +1,111 @@
+.menu {
+    padding-top: 5px;
+
+    .menu-item {
+        margin: 0px 5px;
+        white-space: nowrap;
+        font-family: $font;
+        font-size: $sidemenu-font;        
+        // border: 1px solid #eeeeee;        
+
+        .menu-text {
+            display: block;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: $sidemenu-color;
+            border-radius: 3px;
+
+            .menu-icon{
+                margin-right: 12px;
+            }            
+        }
+
+        .menu-text:hover{
+            background-color: $sidemenu-hover-background;
+            color: $sidemenu-hover-color;
+        }
+
+        ul {
+            padding: 0px;
+            margin: 0px 0px 0px 30px;
+            list-style: none;
+            visibility: hidden;
+            height: 0px;
+            font-size: $sidemenu-font-sub;
+
+            a {
+                padding: 5px;
+                width: 100%;
+                display: inline-block;
+                text-decoration: none;
+                border-radius: 3px;
+                color: $sidemenu-color;
+
+                i {
+                    margin-right: 10px;
+                }
+            }
+
+            a:hover {
+                background-color: $sidemenu-hover-background;
+                color: $sidemenu-hover-color;
+            }
+
+            a:focus-within {
+                // background-color: $sidemenu-active-background;
+            }
+        }
+
+        .active-menu {
+            background-color: $sidemenu-active-background;
+            color: $sidemenu-active-color;
+        }
+
+    }
+
+    .menu-item:hover {
+        cursor:default;
+    }    
+}
+
+.sidemenu-open, .sidemenu-overlay {
+    .menu-item-open {
+        .pi-chevron-down {
+            transform: rotate(180deg);
+        }
+
+        ul {
+            visibility: visible;
+            height: auto;
+        }
+    }
+}
+
+.sidemenu-minimize {
+    .menu-item {
+        .menu-text {
+            padding: 10px 12px;
+
+            .menu-icon{
+                margin-right: 15px;
+            }
+        }
+    }
+
+    .menu-item:hover {
+        ul {
+            visibility: visible;
+            height: auto;
+            width: 200px;
+            // transition: 0.5s ease;
+            position: absolute;
+            left: 18px;
+            margin-top: -35px;
+            z-index: 10;
+            background-color: $sidemenu-background;
+            padding: 5px 2px;
+            border: solid 1px #DDDDDD;
+            border-radius: 5px;
+        }
+    }
+}

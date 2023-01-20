@@ -1,0 +1,54 @@
+<div class="menu">
+    <!-- ======================================================= -->
+    <!-- =============== Dynamic Menu With Model =============== -->
+    <div *ngFor="let i=index; let menu of sideMenuItem;" id="{{i}}" class="menu-item">
+
+        <a *ngIf="menu.items==undefined" routerLink="{{menu.link}}" class="menu-text " [ngClass]="getRoute()=='/' + menu.link ? 'active-menu' : ''">
+            <i class="pi {{menu.icon}} menu-icon"></i>
+            <span>{{menu.label}}</span>
+        </a>
+
+        <div *ngIf="menu.items!=undefined" class="menu-text flex"  (click)="onClick(i)">
+            <i class="pi {{menu.icon}} menu-icon flex"></i>
+            <span class="flex-grow-1">{{menu.label}}</span>
+            <i class="pi pi-chevron-down flex"></i>
+        </div>
+            
+        <ul *ngIf="menu.items!=undefined">
+            <li *ngFor="let submenu of menu.items;"><a routerLink="{{submenu.link}}" [ngClass]="getRoute()=='/' + submenu.link ? 'active-menu' : ''"><i class="pi {{submenu.icon}}"></i>{{submenu.label}}</a></li>
+        </ul>
+    </div>
+    <!-- End Dynamic Menu -->
+    <!-- ======================================================= -->
+
+
+    <!-- ======================================================= -->
+    <!-- Static Menu No-Model -->
+    <div id="menu_index" class="menu-item">
+        <div class="menu-text flex"  (click)="onClick('menu_index')">
+            <i class="pi pi-bars menu-icon flex"></i>
+            <span class="flex-grow-1 menu-text-inner">Menu with submenu</span>
+            <i class="pi pi-chevron-down flex"></i>
+        </div>        
+            
+        <ul>
+            <li><a routerLink="submenu1" [ngClass]="getRoute()=='/submenu1' ? 'active-menu' : ''"><i class="pi pi-angle-right"></i>Sub Menu 1</a></li>
+            <li><a routerLink="submenu2" [ngClass]="getRoute()=='/submenu2' ? 'active-menu' : ''"><i class="pi pi-angle-right"></i>Sub Menu 2</a></li>
+        </ul>
+    </div>
+
+    <div class="menu-item">
+        <a routerLink="menu" class="menu-text" [ngClass]="getRoute()=='/menu' ? 'active-menu' : ''">
+            <i class="pi pi-link menu-icon"></i>
+            <span>Static Menu</span>
+        </a>
+    </div>
+    <div class="menu-item">
+        <a href="http://primefaces.org/primeng/" target="_blank" class="menu-text">
+            <i class="pi pi-prime menu-icon"></i>
+            <span>About PrimeNG</span>
+        </a>
+    </div>
+    <!-- End Static Menu -->
+    <!-- ======================================================= -->
+</div>
