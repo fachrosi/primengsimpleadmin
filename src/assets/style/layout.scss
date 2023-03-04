@@ -27,6 +27,10 @@ body {
         box-shadow: none;
     }
 
+    button:not(:focus) {
+        border: none;
+    }
+
     img {
         height: 30px;
         width: auto;
@@ -71,7 +75,7 @@ body {
 }
 
 .sidemenu-minimize {
-    width: 50px;
+    width: $sidemenu-width-minimize;
     transition: width 0.5s;
 }
 
@@ -105,7 +109,7 @@ body {
 }
 
 .content-wide {
-    width: calc(100% - 50px);
+    width: calc(100% - $sidemenu-width-minimize);
     transition: width 0.5s;
 }
 

@@ -1,12 +1,23 @@
-//Setting
-$sidemenu-width-open : 240px;
-$sidemenu-font : 14px;
-$sidemenu-font-sub : 12px;
-$font : Arial;
+//==================================================================
+// General Config 
+//==================================================================
+$sidemenu-width-open : 240px;           //widh sidemenu if open
+$sidemenu-width-minimize : 60px;        //widh sidemenu if minimize
+$sidemenu-font : 14px;                  //font size of sidemenu
+$sidemenu-font-sub : 12px;              //font size of sub menu 
+$font : Arial;                          //font type
 
-// Color Combination
 
+//==================== Theme Color Combination //===================
+// You can choose available theme below or you can create your own 
+// theme. Uncomment variables theme you choosed and comment the others.
+// You can also use primeNG color in : https://primeng.org/colors
+// Example : 
+// $sidemenu-active-color : var(--gray-600);
+
+//==================================================================
 // Theme : Clean
+//==================================================================
 $header-background: #FFFFFF;
 $header-color : #666666;
 $header-hover-background : #EEEEEE;
@@ -19,7 +30,10 @@ $sidemenu-active-background : #DDDDDD;
 $sidemenu-active-color : #666666;
 $content-background : #EEEEEE;
 
+
+//==================================================================
 // Theme : Red Angular
+//==================================================================
 // $header-background: #c3002f;
 // $header-color : #FFFFFF;
 // $header-hover-background : #FFFFFF;
@@ -32,7 +46,10 @@ $content-background : #EEEEEE;
 // $sidemenu-active-color : #FFFFFF;
 // $content-background : #EEEEEE;
 
+
+//==================================================================
 // Theme : Admin LTE
+//==================================================================
 // $header-background: #2596be;
 // $header-color : #FFFFFF;
 // $header-hover-background : #e7eaee;
@@ -43,4 +60,19 @@ $content-background : #EEEEEE;
 // $sidemenu-hover-color : #FFFFFF;
 // $sidemenu-active-background : #2c3b40;
 // $sidemenu-active-color : #FFFFFF;
+// $content-background : #EEEEEE;
+
+//==================================================================
+// Theme : Create Your Theme here
+//==================================================================
+// $header-background: #FFFFFF;
+// $header-color : #666666;
+// $header-hover-background : #EEEEEE;
+// $header-hover-color : #666666;
+// $sidemenu-background : #FFFFFF;
+// $sidemenu-color : #666666;
+// $sidemenu-hover-background : #EEEEEE;
+// $sidemenu-hover-color : #666666;
+// $sidemenu-active-background : #DDDDDD;
+// $sidemenu-active-color : #666666;
 // $content-background : #EEEEEE;
