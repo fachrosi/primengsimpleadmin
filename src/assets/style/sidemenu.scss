@@ -2,7 +2,7 @@
     padding-top: 5px;
 
     .menu-item {
-        margin: 0px 5px;
+        margin: 0px 12px;
         white-space: nowrap;
         font-family: $font;
         font-size: $sidemenu-font;        
@@ -10,7 +10,7 @@
 
         .menu-text {
             display: block;
-            padding: 10px 15px;
+            padding: 10px 12px;
             text-decoration: none;
             color: $sidemenu-color;
             border-radius: 3px;
@@ -50,10 +50,6 @@
                 background-color: $sidemenu-hover-background;
                 color: $sidemenu-hover-color;
             }
-
-            a:focus-within {
-                // background-color: $sidemenu-active-background;
-            }
         }
 
         .active-menu {
@@ -83,10 +79,10 @@
 
 .sidemenu-minimize {
     .menu-item {
-        width: calc($sidemenu-width-minimize - 25px);
+        width: calc($sidemenu-width-minimize - 30px);
 
         .menu-text {            
-            padding: 10px calc(($sidemenu-width-minimize - 41px)/2);
+            padding: 10px calc(($sidemenu-width-minimize - 46px)/2);
 
             .menu-text-inner {
                 flex : none;
