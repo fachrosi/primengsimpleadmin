@@ -5,6 +5,7 @@ import { LayoutComponent } from './admin/layout/layout.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { Login1Component } from './login/login1/login1.component';
 import { Login2Component } from './login/login2/login2.component';
+import { DocumentationComponent } from './documentation/documentation.component';
 
 const routes: Routes = [
   {
@@ -32,6 +33,9 @@ const routes: Routes = [
       },{
         path      : 'submenu2',
         component : DashboardComponent
+      },{
+        path      : 'documentation',
+        component : DocumentationComponent
       }
     ]
   },{

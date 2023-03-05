@@ -29,8 +29,7 @@
             <i class="pi pi-bars menu-icon flex"></i>
             <span class="menu-text-inner flex-grow-1">Menu with submenu</span>
             <i class="pi pi-chevron-down flex  menu-arrow"></i>
-        </div>        
-            
+        </div>                    
         <ul>
             <li><a routerLink="submenu1" [ngClass]="getRoute()=='/submenu1' ? 'active-menu' : ''"><i class="pi pi-angle-right"></i>Sub Menu 1</a></li>
             <li><a routerLink="submenu2" [ngClass]="getRoute()=='/submenu2' ? 'active-menu' : ''"><i class="pi pi-angle-right"></i>Sub Menu 2</a></li>
@@ -43,6 +42,14 @@
             <span class="menu-text-inner flex-grow-1">Static Menu</span>
         </a>
     </div>
+
+    <div class="menu-item">
+        <a routerLink="documentation" class="menu-text flex" [ngClass]="getRoute()=='/documentation' ? 'active-menu' : ''">
+            <i class="pi pi-book menu-icon flex"></i>
+            <span class="menu-text-inner flex-grow-1">Documentation</span>
+        </a>
+    </div>
+
     <div class="menu-item">
         <a href="http://primefaces.org/primeng/" target="_blank" class="menu-text flex">
             <i class="pi pi-prime menu-icon flex"></i>

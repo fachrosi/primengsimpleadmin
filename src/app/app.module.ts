@@ -11,6 +11,9 @@ import { PanelMenuModule } from 'primeng/panelmenu';
 import { ScrollerModule } from 'primeng/scroller';
 import { CardModule } from 'primeng/card';
 import { InputTextModule } from 'primeng/inputtext';
+import {MessagesModule} from 'primeng/messages';
+import {MessageModule} from 'primeng/message';
+
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -20,6 +23,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { SidemenuComponent } from './admin/sidemenu/sidemenu.component';
 import { Login1Component } from './login/login1/login1.component';
 import { Login2Component } from './login/login2/login2.component';
+import { DocumentationComponent } from './documentation/documentation.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +32,8 @@ import { Login2Component } from './login/login2/login2.component';
     DashboardComponent,
     SidemenuComponent,
     Login1Component,
-    Login2Component
+    Login2Component,
+    DocumentationComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +47,8 @@ import { Login2Component } from './login/login2/login2.component';
     PanelMenuModule,
     CardModule,
     ScrollerModule,
-    InputTextModule
+    InputTextModule,
+    MessagesModule, MessageModule
   ],
   providers: [],
   bootstrap: [AppComponent]
