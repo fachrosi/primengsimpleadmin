@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { MenuItem } from 'primeng/api';
 
 @Component({
@@ -13,7 +14,9 @@ export class LayoutComponent implements OnInit {
   public headerMenuItem : MenuItem[];
   public user = 'Hi, User'
   
-  constructor() 
+  constructor(
+    private router : Router
+  ) 
   {
     console.log(window.innerWidth)
     if (window.innerWidth<=480){
@@ -69,7 +72,8 @@ export class LayoutComponent implements OnInit {
   }
 
   onSignOut(){
-    alert('Logout')
+    // alert('Logout')
+    this.router.navigate(['/login'])
   }
 
 }
