@@ -11,8 +11,8 @@ import { PanelMenuModule } from 'primeng/panelmenu';
 import { ScrollerModule } from 'primeng/scroller';
 import { CardModule } from 'primeng/card';
 import { InputTextModule } from 'primeng/inputtext';
-import {MessagesModule} from 'primeng/messages';
-import {MessageModule} from 'primeng/message';
+import { MessagesModule } from 'primeng/messages';
+import { MessageModule } from 'primeng/message';
 
 
 
@@ -24,6 +24,7 @@ import { SidemenuComponent } from './admin/sidemenu/sidemenu.component';
 import { Login1Component } from './login/login1/login1.component';
 import { Login2Component } from './login/login2/login2.component';
 import { DocumentationComponent } from './documentation/documentation.component';
+import { StaticComponent } from './static/static.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { DocumentationComponent } from './documentation/documentation.component'
     SidemenuComponent,
     Login1Component,
     Login2Component,
-    DocumentationComponent
+    DocumentationComponent,
+    StaticComponent
   ],
   imports: [
     BrowserModule,

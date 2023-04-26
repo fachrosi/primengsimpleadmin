@@ -27,12 +27,12 @@
     <div id="menu_index" class="menu-item">
         <div class="menu-text flex"  (click)="onClick('menu_index')">
             <i class="pi pi-bars menu-icon flex"></i>
-            <span class="menu-text-inner flex-grow-1">Menu with submenu</span>
+            <span class="menu-text-inner flex-grow-1">Static Group Menu</span>
             <i class="pi pi-chevron-down flex  menu-arrow"></i>
         </div>                    
         <ul>
-            <li><a routerLink="submenu1" [ngClass]="getRoute()=='/submenu1' ? 'active-menu' : ''"><i class="pi pi-angle-right"></i>Sub Menu 1</a></li>
-            <li><a routerLink="submenu2" [ngClass]="getRoute()=='/submenu2' ? 'active-menu' : ''"><i class="pi pi-angle-right"></i>Sub Menu 2</a></li>
+            <li><a routerLink="submenu1" [ngClass]="getRoute()=='/submenu1' ? 'active-menu' : ''"><i class="pi pi-angle-right"></i>Static Sub Menu 1</a></li>
+            <li><a routerLink="submenu2" [ngClass]="getRoute()=='/submenu2' ? 'active-menu' : ''"><i class="pi pi-angle-right"></i>Static Sub Menu 2</a></li>
         </ul>
     </div>
 
@@ -54,6 +54,13 @@
         <a href="http://primefaces.org/primeng/" target="_blank" class="menu-text flex">
             <i class="pi pi-prime menu-icon flex"></i>
             <span class="menu-text-inner flex-grow-1">About PrimeNG</span>
+        </a>
+    </div>
+
+    <div class="menu-item">
+        <a href="https://github.com/fachrosi/primengsimpleadmin" target="_blank" class="menu-text flex">
+            <i class="pi pi-github menu-icon flex"></i>
+            <span class="menu-text-inner flex-grow-1">Get on Github</span>
         </a>
     </div>
     <!-- End Static Menu -->

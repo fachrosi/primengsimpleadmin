@@ -6,6 +6,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { Login1Component } from './login/login1/login1.component';
 import { Login2Component } from './login/login2/login2.component';
 import { DocumentationComponent } from './documentation/documentation.component';
+import { StaticComponent } from './static/static.component';
 
 const routes: Routes = [
   {
@@ -23,16 +24,16 @@ const routes: Routes = [
         loadChildren  : () => import('./components/components.module').then(m => m.ComponentsModule)
       },{
         path      : 'setting',
-        component : DashboardComponent
+        component : StaticComponent
       },{
         path      : 'menu',
-        component : DashboardComponent
+        component : StaticComponent
       },{
         path      : 'submenu1',
-        component : DashboardComponent
+        component : StaticComponent
       },{
         path      : 'submenu2',
-        component : DashboardComponent
+        component : StaticComponent
       },{
         path      : 'documentation',
         component : DocumentationComponent
