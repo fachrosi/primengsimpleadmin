@@ -1,18 +1,20 @@
 <div class="container">
     <div class="login">
-        <h1>LOGIN</h1>
-    <div class="p-inputgroup">
-        <span class="p-inputgroup-addon"><i class="pi pi-user"></i></span>
-        <input type="text" pInputText placeholder="Username">         
-    </div>
-    <div class="p-inputgroup">
-        <span class="p-inputgroup-addon"><i class="pi pi-lock"></i></span>
-        <input type="password" pInputText placeholder="Password">         
-    </div>
+        <img src="assets/imgs/angular-logo.png">
+        <h2>LOGIN</h2>
+        <div class="p-inputgroup">
+            <span class="p-inputgroup-addon"><i class="pi pi-user"></i></span>
+            <input type="text" pInputText placeholder="Username">         
+        </div>
+        <div class="p-inputgroup">
+            <span class="p-inputgroup-addon"><i class="pi pi-lock"></i></span>
+            <input type="password" pInputText placeholder="Password">         
+        </div>
 
-    <button pButton pRipple type="button" label="Login" class="p-button-rounded p-button-secondary" (click)="onLogin()"></button>
+        <button type="button" (click)="onLogin()">Login</button>
+        <!-- <button pButton pRipple type="button" label="Login" class="p-button-rounded p-button-secondary" (click)="onLogin()"></button> -->
 
-    <p><a routerLink="/">Registration</a></p>
+        <p><a routerLink="/">Registration</a></p>
     </div>
 </div>
 

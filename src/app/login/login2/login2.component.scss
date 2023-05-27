@@ -21,6 +21,18 @@
 
         button {
             width: 100%;
+            background-color: $header-background;
+            color: $header-color;
+            border: 1px solid #EEEEEE;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 16px;
+        }
+
+        button:hover {
+            cursor: pointer;
+            background-color: $header-hover-background;
+            color : $header-hover-color;
         }
     
         p {

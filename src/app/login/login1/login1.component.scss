@@ -13,9 +13,15 @@
     font-family: $font;
     background-color: $header-background;
 
-    h1 {
+    img {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    h2 {
         text-align: center;
-        color: #666666;        
+        color: $header-color;
     }
 
     .p-inputgroup {
@@ -24,6 +30,18 @@
 
     button {
         width: 100%;
+        background-color: $sidemenu-background;
+        color: $sidemenu-color;
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 16px;
+    }
+
+    button:hover {
+        cursor: pointer;
+        background-color: $sidemenu-hover-background;
+        color : $sidemenu-hover-color;
     }
 
     p {
@@ -31,11 +49,11 @@
 
         a {
             text-decoration: none;
-            color: #666666;
+            color: $header-color;
         }
 
         a:hover{
-            color: var(--red-500);
+            color: $header-hover-color;
         }
     }
 }
