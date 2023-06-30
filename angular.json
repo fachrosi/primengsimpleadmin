@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "primengsimpleadmin": {
+    "primengsimpleadmin16": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/primengsimpleadmin",
+            "outputPath": "dist/primengsimpleadmin16",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -31,8 +31,7 @@
             ],
             "styles": [
               "src/styles.scss",
-              "src/assets/theme/saga-blue/theme.css",
-              "node_modules/primeicons/primeicons.css",              
+              "node_modules/primeng/resources/themes/saga-blue/theme.css",
               "node_modules/primeng/resources/primeng.min.css",
               "node_modules/primeflex/primeflex.css"
             ],
@@ -69,10 +68,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "primengsimpleadmin:build:production"
+              "browserTarget": "primengsimpleadmin16:build:production"
             },
             "development": {
-              "browserTarget": "primengsimpleadmin:build:development"
+              "browserTarget": "primengsimpleadmin16:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +79,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "primengsimpleadmin:build"
+            "browserTarget": "primengsimpleadmin16:build"
           }
         },
         "test": {
