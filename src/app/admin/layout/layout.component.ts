@@ -4,8 +4,9 @@ import { MenuItem } from 'primeng/api';
 
 @Component({
   selector: 'app-layout',
+  standalone: false,
   templateUrl: './layout.component.html',
-  styleUrls: ['./layout.component.scss']
+  styleUrl: './layout.component.scss'
 })
 export class LayoutComponent implements OnInit {
   public sidemenuOpen = true;
@@ -30,18 +31,23 @@ export class LayoutComponent implements OnInit {
 
     this.headerMenuItem = [
       {
-        label   : 'Profil', 
-        icon    : 'pi pi-fw pi-user'
-      },{
-        label   : 'Setting', 
-        icon    : 'pi pi-fw pi-cog'
-      },{
-        label   : 'Logout', 
-        icon    : 'pi pi-fw pi-sign-out',
-        command : () => {
-          this.onSignOut();
-        }
+        items : [
+          {
+            label   : 'Profil', 
+            icon    : 'pi pi-user'
+          },{
+            label   : 'Setting', 
+            icon    : 'pi pi-cog'
+          },{
+            label   : 'Logout', 
+            icon    : 'pi pi-sign-out',
+            command : () => {
+              this.onSignOut();
+            }
+          }
+        ]
       }
+      
     ];
   }
 
@@ -77,3 +83,4 @@ export class LayoutComponent implements OnInit {
   }
 
 }
+

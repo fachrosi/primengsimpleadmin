@@ -1,4 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
-@import "primeicons/primeicons.css";
-@import '/src/assets/style/layout.scss';
-@import '/src/assets/style/card.scss';
+@use '../public/assets/style/layout.scss';
+@use '../public/assets/style/sidemenu.scss';
+@use "primeicons/primeicons.css";

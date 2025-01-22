@@ -1,4 +1,4 @@
-@import "src/assets/style/_variables.scss";
+@import "../../../../public/assets/style/variables";
 
 .login {
     max-width: 400px;
@@ -32,7 +32,7 @@
         width: 100%;
         background-color: $sidemenu-background;
         color: $sidemenu-color;
-        border: none;
+        border: solid 1px #DDDDDD;
         padding: 10px;
         border-radius: 10px;
         font-size: 16px;

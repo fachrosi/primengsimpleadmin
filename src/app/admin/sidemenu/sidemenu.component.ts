@@ -4,7 +4,8 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-sidemenu',
   templateUrl: './sidemenu.component.html',
-  styleUrls: ['./sidemenu.component.scss']
+  styleUrls: ['./sidemenu.component.scss'],
+  standalone : false
 })
 export class SidemenuComponent implements OnInit {
   public sideMenuItem:any=[];
